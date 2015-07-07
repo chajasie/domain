@@ -9,7 +9,7 @@
 | It's a breeze. Simply tell Laravel the URIs it should respond to
 | and give it the controller to call when that URI is requested.
 |
-|Update durch ATOM
+|Update durch ATOM und so
 */
 
 Route::get('/', 'DomainController@index');
