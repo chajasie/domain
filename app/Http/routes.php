@@ -10,6 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 |Update durch ATOM und so
+
+jetzt schauen wir mal 
 */
 
 Route::get('/', 'DomainController@index');
