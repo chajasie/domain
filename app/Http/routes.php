@@ -11,7 +11,7 @@
 |
 |Update durch ATOM und so
 
-jetzt schauen wir mal 
+jetzt schauen wir mal
 */
 
 Route::get('/', 'DomainController@index');
