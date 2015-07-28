@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "hash": "555624ccbb615b66320a8a1a1f8d3fd4",
+=======
+    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -223,6 +227,7 @@
             "time": "2014-12-20 21:24:13"
         },
         {
+<<<<<<< HEAD
             "name": "illuminate/html",
             "version": "v5.0.0",
             "source": {
@@ -269,6 +274,8 @@
             "time": "2015-01-01 16:31:18"
         },
         {
+=======
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {

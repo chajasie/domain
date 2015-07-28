@@ -6,8 +6,12 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
+<<<<<<< HEAD
         "laravel/framework": "5.1.*",
         "illuminate/html": "^5.0"
+=======
+        "laravel/framework": "5.1.*"
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

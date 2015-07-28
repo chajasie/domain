@@ -13,7 +13,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'debug' => env('APP_DEBUG', true),
+=======
+    'debug' => env('APP_DEBUG', false),
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
 
     /*
     |--------------------------------------------------------------------------
@@ -78,7 +82,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'key' => env('APP_KEY', 'Pih7AxD1g3l7XztVx2FfuaRTUrTQFAiI'),
+=======
+    'key' => env('APP_KEY', 'SomeRandomString'),
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
 
     'cipher' => 'AES-256-CBC',
 
@@ -136,7 +144,10 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+<<<<<<< HEAD
         Illuminate\Html\HtmlServiceProvider::class,
+=======
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
 
         /*
          * Application Service Providers...
@@ -192,7 +203,10 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+<<<<<<< HEAD
         'Form'      => \Illuminate\Html\FormFacade::class,
+=======
+>>>>>>> 9a3c2413b4aa813e364847f1f64f2d65fe61a1cc
 
     ],
 
