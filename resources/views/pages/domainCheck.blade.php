@@ -1,7 +1,7 @@
 @extends('default')
      @section('introText')
+     <h1>Domain Checker</h1>
      <p>
-       <h1>Domain Checker</h1>
        Hier wird nach Domains gesucht..
      </p>
      @stop

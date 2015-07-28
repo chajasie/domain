@@ -20,10 +20,47 @@ class DomainController extends Controller
     }
 
     public function domainCheck(Request $request){
-        $domain = $request->get('domain');
+         //Base URL
+         $url = 'http://api.domain.hosttech.eu/api/call.cgi?s_login=supportvorort&s_pw=ju7Ghfrd&s_entity=1234'; //Testumgebung
+         //$url = 'http://api.domain.hosttech.eu/api/call.cgi?s_login=w.mattar&s_pw=dex5hAAV';
+          //Command check domain
+          /*
+          $command_checkDomain = '&command=CheckDomain&domain=';
+          $domain = $request->get('domain');
+          $response = file_get_contents($url . $command_checkDomain . $domain);
+          $ckeckDomainProperty = responseHandler($response);
+          var_dump($ckeckDomainProperty);
+          return 0;
 
-        return view('pages.domainCheck', ['domain' => $domain]);
+           //Command get user status (for domain prices)
+          $command_userStatus = '&command=StatusUser';
+          $response = file_get_contents($url . $command_userStatus);
+          $userStatusProperty = responseHandler($response);
+
+
+         return view('pages.domainCheck', ['domain' => $domain]);
+         */
+
+
     }
+
+      private function responseHandler($response){
+        $obj = explode("\n", $response);
+        $property = array();
+        if($obj[0] == "[RESPONSE]"){
+          for($i=1;$i<count($obj);$i++){
+             if($obj[$i]!=""){
+               if($obj[$i]=== "EOF"){
+                  break; //End of Response
+               }
+               //Add Array Element
+               $line = explode("=", $obj[$i]);
+               $property[strtolower($line[0])] = $line[1];
+             }
+          }
+        }
+        return $property;
+      }
 
     /**
      * Show the form for creating a new resource.
