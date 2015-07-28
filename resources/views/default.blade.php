@@ -40,8 +40,9 @@
             <!-- Navigation END -->
             <!-- content -->
             <div class="col-lg-8">
-                @yield("content")
+                @yield("introText")
                 @yield("form")
+                @yield("content")
             </div>
             <div class="col-lg-4">
                 This is just some randome Text. That shows just, how important it is to have propper content.

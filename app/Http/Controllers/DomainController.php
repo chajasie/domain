@@ -22,7 +22,7 @@ class DomainController extends Controller
     public function domainCheck(Request $request){
         $domain = $request->get('domain');
 
-        return view('pages.domainCheck');
+        return view('pages.domainCheck', ['domain' => $domain]);
     }
 
     /**
